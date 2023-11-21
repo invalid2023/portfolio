@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <meta name="title" content="Мое портфолио">
+    <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <ul class="nav-li">
+                <li class="refLi0" id="0">Главная</li>
+                <li class="refLi1" id="1">Мои работы</li>
+                <li class="refLi2" id="2">обо мне</li>
+            </ul>
+            <ul class="nav-a">
+                <li><a href="#top">Главная</a></li>
+                <li><a href="#work">Мои работы</a></li>
+                <li><a href="#about">обо мне</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper-content">
+        <div class="top-wrapper" style="display: block;" id="0">
+            <div class="top-page" id="top">
+                <div class="foto"> 
+                    <img src="./img/face.jpg" alt="" >
+                   </div> 
+                <div class="text">Привет!<br>Меня зовут Дмитрий Кононов<br><span class="text__span">Я Junior frontend
+                        developer</span></div>
+                <div class="contact">
+                    <ul>
+                        <li><a href=""><img src="./icons/telegram.png" class="contact__img" alt=""></a></li>
+                        <li><a href=""><img src="./icons/viber.png" class="contact__img" alt=""></a></li>
+                        <li><a href=""><img src="./icons/facebook.png" class="contact__img" alt=""></a></li>
+                    
+                    </ul>
+                    
+                </div>
+              
+            </div>
+        </div>
+        <div class="my-work" id="1">
+            <div class="container">
+                <div class="title" id="work">мои работы</div>
+                <div class="nav-work"><a href="" class="nav-work__all" id="allWork"><span class="spanwrap"></span> <span
+                            class="spantext">Все</span> </a><a href="" class="nav-work__ecommerce" id="E-commerce"><span
+                            class="spanwrap"></span> <span class="spantext">E-commerce</span> </a><a href=""
+                        class="nav-work__educationlal" id="Educational"><span class="spanwrap"></span> <span
+                            class="spantext">Учебные</span></a></div>
+            </div>
+        </div>
+        <div class="wrapper-about" id="2">
+            <div class="container">
+                <div class="title">Технологии которые я использую</div>
+                <div class="about" id="about">
+                    <div class="tech">
+                        <ul class="tech__stack">
+                            <li class="tech__item">HTML</li>
+                            <li class="tech__item">CSS</li>
+                            <li class="tech__item">Java Script</li>
+                            <li class="tech__item">Jquary</li>
+                            <li class="tech__item">Gulp</li>
+                        </ul><img src="./img/computer.png" class="techimg">
+                    </div>
+                    <div class="programms"><img src="./img/man.png" class="programmsimg" alt="">
+                        <ul>
+                            <li class="programms__item">Photoshop</li>
+                            <li class="programms__item">Figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/mod.js"></script>
+</body>
+
+</html>
