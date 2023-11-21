@@ -3,7 +3,8 @@
     position: relative;
     background: url(../img/main_bg.jpg) no-repeat
 }
-.foto{
+
+/* .foto{
     border:1px dotted #262a5e;
     width:300px ;
     height: 300px;
@@ -22,7 +23,7 @@
     box-shadow:0px 0px 50px #262a5e;
    
    
-}
+} */
 .top-page{
     position: relative;
   
@@ -306,8 +307,61 @@
 .block {
     display: block
 }
-
+@media(max-width:1400px){
+    .wrapper-content .top-wrapper .top-page  .foto{
+      
+        border:1px dotted #262a5e;
+        width:200px ;
+        height: 200px;
+      
+      text-align: center;
+        border-radius: 300px;
+        padding: 50px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .foto img{
+        border-radius: 300px;
+        height: 200px;
+        width:200px;
+        
+       
+        box-shadow:0px 0px 50px #262a5e;
+       
+       
+    }
+   .wrapper-content .top-wrapper .top-page .text{
+        margin-top: 0px;
+        text-align: center;
+        padding: 0;
+        margin-top:50px
+    }
+    .wrapper-content .top-wrapper .top-page .contact{
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}
 @media(max-width:786px) {
+    .wrapper-content .top-wrapper .top-page .foto{
+        border:1px dotted #262a5e;
+        width:200px ;
+        height: 200px;
+      
+        margin: 0 auto;
+        margin-top: 130px;
+        border-radius: 300px;
+        padding: 50px;
+    }
+    .foto img{
+        border-radius: 300px;
+        height: 200px;
+        width:200px;
+        
+       
+        box-shadow:0px 0px 50px #262a5e;
+       
+       
+    }
     .header {
         position: fixed;
         width: 100%;
@@ -395,6 +449,25 @@
 }
 
 @media(max-width:660px) {
+    .foto{
+        border:1px dotted #262a5e;
+        width:200px ;
+        height: 200px;
+      
+        
+        border-radius: 300px;
+        padding: 50px;
+    }
+    .foto img{
+        border-radius: 300px;
+        height: 200px;
+        width:200px;
+        
+       
+        box-shadow:0px 0px 50px #262a5e;
+       
+       
+    }
     .wrapper-content .top-wrapper .top-page .text {
         font-size: 25px;
         text-align: center;
@@ -413,6 +486,25 @@
 }
 
 @media(max-width:419px) {
+    .foto{
+        border:1px dotted #262a5e;
+        width:200px ;
+        height: 200px;
+      
+        
+        border-radius: 300px;
+        padding: 50px;
+    }
+    .foto img{
+        border-radius: 300px;
+        height: 200px;
+        width:200px;
+        
+       
+        box-shadow:0px 0px 50px #262a5e;
+       
+       
+    }
     .title {
         font-size: 20px
     }
@@ -439,4 +531,29 @@
         height: 175px;
         top: 10px
     }
+}
+@media(max-width:1400px){
+  
+}
+@media(min-width:1400px){
+    .foto{
+    border:1px dotted #262a5e;
+    width:300px ;
+    height: 300px;
+    position: absolute;
+    top:125px;
+    right: 300px;
+    border-radius: 300px;
+    padding: 50px;
+}
+.foto img{
+    border-radius: 300px;
+    height: 300px;
+    width:300px;
+    
+   
+    box-shadow:0px 0px 50px #262a5e;
+   
+   
+}
 }
