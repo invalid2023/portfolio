@@ -1,0 +1,829 @@
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin: 0px;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+$header-color-text:#ffffff;
+$text-section-color:#222222;
+$bg-header-color:red;
+$bg-subheader:rgba(0, 0, 0, 0.1);
+$bg-footer:url('../img/world_bg.svg')center center/cover no-repeat;
+$bg-header:url('../img/uber_bg.png') center center/cover no-repeat;
+
+@mixin alignTransform{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@mixin standartFlex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+@mixin button{
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+    border:none;
+}
+@mixin sectionButton{
+    
+height: 27px;
+color:white;
+text-transform: uppercase;
+text-align: center;
+background: #000000;
+}
+
+nav{
+    background-color:#222222 ;
+    height: 53px;
+}
+.subheader{
+    font-family: 'Roboto' serif;
+   position:absolute;
+   width:100%;
+    background: $bg-subheader;
+    align-items: center;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &_btn{
+        @include button;
+        width: 172px;
+        height: 46px;
+      
+    }
+    &_text{
+       
+font-style: normal;
+font-weight: 100;
+
+    }
+    &_call{
+        font-weight: 300;
+font-size: 12px;
+text-align: right;
+    }
+    &_link{
+        font-weight: 400;
+font-size: 22px;
+color: #FFFFFF;
+text-align: right;
+display: block;
+  }
+
+&_mobile{
+    background:black;
+    opacity: 0.6;
+}
+}
+.menu{
+    @include standartFlex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:50px;
+    padding-right: 50px;
+
+    &_item{
+        list-style: none;
+    }
+    &_link{
+        font-weight: 300;
+        font-size: 15px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    &_link:hover{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+}
+
+.promo{
+ 
+  
+font-family: "Roboto" serif;
+padding-top: 100px;
+    color:white;
+    height: 800px;
+    text-align: center;
+    background:$bg-header;
+    &_btn{
+        @include button;
+        width: 211px;
+        height: 63px;
+        margin-top: 130px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 63px;
+    }
+    &_header{
+        font-weight: 900;
+        font-size: 60px;
+    }
+    &_subheader{
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    &_descr{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 30px;
+        text-align: center;
+    }
+  
+    &_partners{
+        display:block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
+.benefits{
+    text-align: center;
+    &_btn{
+        @include sectionButton;
+        margin-top: 20px;
+padding-left: 10px;
+padding-right: 10px;
+font-weight: 400;
+font-size: 11px;
+width: 113px;
+    }
+    &_item{
+        text-align: left;
+        padding-left: 30px;
+      
+    }
+    &_text{
+        font-weight: 700;
+font-size: 38px;
+text-transform: uppercase;
+margin-top: 30px;
+    }
+    span{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 21px;
+        color:#1EACC7;
+    }
+    .icon_round{
+        display:flex;
+    @include standartFlex;
+    justify-content: center;
+        min-width: 116px;
+        min-width: 116px;
+        height: 116px;
+        border-radius: 116px;
+        background: #4CE2FF;
+    }
+   
+}
+.uber{
+    @include alignTransform;
+    height: auto;
+    
+
+    &_btn{
+        @include sectionButton;
+margin-top: 20px;
+padding-left: 10px;
+padding-right: 10px;
+font-weight: 400;
+font-size: 11px;
+width: 113px;
+
+    }
+    &_desc{
+      text-transform: none;
+color:black;
+font-weight: 400;
+font-size: 17px;
+line-height: 21px;
+margin-bottom: 30px;
+    }
+    &_text{
+        margin-top: 20px;
+        color:#000000;
+        font-weight: 700;
+font-size: 38px;
+    }
+    &_item{
+        &_desc{
+            color:#FFFFFF;
+            margin-top: 40px;
+        }
+    }
+
+}
+
+.uber{
+    background: url("../img/Fon1.svg") center center /cover no-repeat;
+    min-height: 864px;
+    &_item{
+        position:relative;
+        width:320px;
+        height: 280px;
+        padding: 0px;
+        padding-top: 50px;
+        margin-bottom: 20px;
+        &_1{
+            background: url('../img/card1.png')center center /cover no-repeat;
+        }
+        &_2{
+            background:  url('../img/card2.png')center center /cover no-repeat;
+        }
+        &_3{
+            background:  url('../img/card3.png')center center /cover no-repeat;
+        }
+        &_4{
+            background:  url('../img/card4.png')center center /cover no-repeat;
+        }
+        &_5{
+            background:  url('../img/card5.png')center center /cover no-repeat;
+        }
+        &_6{
+            background:  url('../img/card6.png')center center /cover no-repeat;
+        }
+    }
+    &_plus{
+        @include standartFlex;
+        justify-content: center;
+        position: absolute;
+        width:26px;
+        height: 26px;
+        border-radius: 100%;
+        background: #000000;
+        bottom:35px;
+        margin:0 auto;
+        left:45%;
+
+        
+
+    }
+   
+}
+.choise{
+  position:relative;
+    text-align: center;
+    height: 898px;
+
+    background:  #070716;;
+
+   padding-top: 50px;
+  
+    &_text ,&_desc{
+        color:white;
+    }
+    &_text{
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 48px;
+        text-transform: uppercase;
+    }
+    &_image{
+        position:absolute;
+        width:100%;
+        top:250px;
+        left:0px;
+        
+        height: 480px;
+
+    }
+    &_footer{
+        background: url(../img/Fon1.svg) repeat;
+        height: 380px;
+        margin-top: 367px;
+        padding-top:185px;
+      
+
+     
+    }
+    span{
+        display: block;
+        margin: 0 auto;
+    }
+}
+   
+.terms{
+ &_ul{
+    li{position: relative; }
+    li:before{
+        content:" ";
+        position: absolute;
+        left: -10px;
+        top:6px;
+        
+        background: url(../icons/check.png) no-repeat;
+        width:50px;
+        height: 50px;
+      
+    }
+ }
+    &_margin{
+        margin-bottom: 50px;
+    }
+    ul li{
+        list-style: none;
+        padding-left:20px;
+        font-weight: 300;
+font-size: 17px;
+line-height: 30px;
+    }
+    &_btn{
+        display: block;
+        margin:0 auto;
+        @include sectionButton;
+        margin-top: 20px;
+        padding-left: 10px;
+padding-right: 10px;
+font-weight: 400;
+font-size: 11px;
+width: 113px;
+    }
+   &_text{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 700;
+font-size: 38px;
+
+
+   }
+   &_termsCaption{
+    margin-bottom: 20px;
+     color:  #1FBAD6;
+    span{
+        text-transform:  uppercase;
+       
+    }
+    font-weight: 400;
+font-size: 22px;
+line-height: 24px;
+
+
+   }
+   &_conditionsCaption{
+    text-transform: uppercase;
+    color:red;
+    margin-bottom: 20px;
+    
+   }
+   font-weight: 400;
+font-size: 22px;
+line-height: 24px;
+   
+&_ul2{
+    li{position: relative;}
+    li:before{
+        content:" ";
+        position: absolute;
+        left: -10px;
+        top:6px;
+        
+        background: url(../icons/redcheck.png) no-repeat;
+        width:50px;
+        height: 50px;
+      
+    }
+}
+}
+
+
+
+
+
+
+.aroundworld{ 
+
+    color:white;
+    background:  #080816 url(../img/world_bg.svg) center center no-repeat;
+    
+    text-align: center;
+    height: 720px;
+    &_btn{
+        @include sectionButton;
+        background: white;
+        color:black;
+        margin-top: 20px;
+        padding-left: 10px;
+padding-right: 10px;
+font-weight: 400;
+font-size: 11px;
+width: 79px;
+    }
+    h2{
+        text-transform: uppercase;
+        margin-top: 30px;
+    }
+    &_h{
+        display:block;
+        text-decoration: none;
+        color:#1FBAD6;
+        text-transform: uppercase;
+        margin-top: 500px;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+.social{
+    width:400px;
+
+
+    a{
+        display:inline-block;
+        height: 35px;
+        width:35px;
+        border-radius: 35px;
+       
+        
+    }
+    &_facebook{
+        background:black url(../icons/facebook.png) center center no-repeat;
+    }
+    &_twitter{
+        background: black url(../icons/twitter.png) center center no-repeat;
+    }
+    &_linkedin{
+        background: black url(../icons/linkedin.png) center center no-repeat;
+    }
+    &_inst{
+        background: black url(../icons/instagram.png) center center no-repeat;
+    }
+}
+}
+
+.store{
+    a{
+        padding-right: 10px;
+    }
+    display: flex;
+    flex-wrap: wrap;
+  
+   border: 1px solid black;
+    width: auto;
+height: 50px;
+.windows{
+    height: 41px;
+}
+
+}
+
+footer ul{
+   
+   
+    li{
+        list-style: none;
+        text-transform: uppercase;
+        
+
+
+
+
+    }
+  
+}
+.footer{
+     
+    hr{
+        width: 301px;
+        border: 2px solid #1FBAD6; ;
+        background: #1FBAD6;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+.wrapper{
+    &_nav{
+       li:last-child{ margin-right: 0px;}
+       }
+    width:400px;
+    &_leng{
+        text-align: center;
+        text-transform: uppercase;
+        color:#1FBAD6;
+        
+    }
+    &_links{
+        margin-bottom: 10px;
+       li{
+        line-height: 11px;
+       }
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width:100%;
+           display: flex;
+       flex-wrap: wrap;
+       
+        li a{font-weight: 300;
+        font-size: 11px;
+         
+        color:#999999;}
+  
+    }
+
+   &_nav{
+    margin-bottom: 10px;
+    width:100%;
+    text-align: center;
+    
+ 
+    
+            li {display: inline-block;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 14px;
+         margin-right: 60px;
+               color: #070716;
+             
+            }
+           
+        }
+       
+}
+.subheader_mobile{
+    display: none;
+}
+@media(max-width:1440px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+        .wrapper{
+            order:-1; 
+        }
+        .social{
+           
+            text-align: center;
+            a{margin-left: 5px;}
+        }
+        .store{
+            
+        }
+       }
+}
+@media(max-width:1200px){
+    .uber_item{
+        width:290px;
+    }
+  
+}
+@media( max-width:992px){
+    .uber_item{
+        width:200px;
+        height: 180px;
+    }
+    .menu{
+        &_link{
+            font-size: 12px;
+        }
+    }
+    .subheader{
+        text-align: left;
+        justify-content: space-around;
+        &_btn{
+            width: 138px;
+            height: 37px;
+            font-size: 12px;
+        }
+        &_call{
+            
+            font-size: 12px;
+        }
+        .just{
+            justify-content:space-between;
+        }
+        &_logo{
+            img{
+                height: 29px;
+            }
+
+        }
+        &_text{
+            font-size: 12px;
+        }
+        &_link{
+            font-size:20px;
+        }
+        
+        
+    }
+   .promo{
+    &_btn{
+        margin-top: 50px;
+    }
+   }
+   .benefits{
+    &_text{
+        font-size: 26px;
+    }
+   }
+   
+}
+@media( max-width:768px){
+   .choise{
+&_text{
+    font-size: 30px;
+}
+   }
+    .uber{
+        &_item{
+            width:200px;
+        height: 180px;
+        }
+        &_text{
+            font-size:30px;
+        }
+    }
+    .menu{
+        &_link{
+            font-size: 9px;
+        }
+    }
+    .subheader{
+        display: none;;
+    }
+    .subheader_mobile{
+        text-align: center;
+        display:block;
+        position: absolute;
+        width:100%;
+       &_flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+       }
+       .subheader_btn{
+        width:110px;
+        height: 22px;
+        font-weight: 400;
+font-size: 10px;
+line-height: 22px;
+       }
+    }
+
+.subheader_mobile_tell{
+    font-weight: 400;
+font-size: 12px;
+
+color:white;
+}
+ .promo{
+    &_descr{
+        display: none;
+    }
+ }
+}
+@media(max-width:576px){
+    .choise{
+        &_desc{
+            font-size: 10px;
+        }
+      &_text{
+        font-size: 25px;
+      }
+        height: 600px;
+      &_footer{
+        background: none;
+        margin-top: 182px;
+        height: 100px;
+        color:white;
+
+      }
+      &_image{
+        top:150px;
+      }
+     
+    }
+    .sm_class{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .uber{
+        .row{    flex-direction: column;
+        }
+    }
+}
+@media(max-width:425px){
+    nav{padding-top: 16px;
+        padding-left:70%;
+        
+        .menu{
+            display:none;
+        }
+        .activemenu{
+            padding: 0px;
+            padding-bottom: 10px;
+            width:170px;
+            display: block;
+            position: absolute;
+            flex-direction: column;
+            left:2px;
+            background: #000000;
+            z-index: 1;
+            color:white;
+            text-align: center;
+            top:0px;
+            left:-201px;
+            transition: left 1s;
+        }
+        .block{
+            transition:left  1s;
+            left:0px;
+            
+        }
+
+        .burger{
+            .spanM{
+                display: none;
+              }
+              .first{
+                position:relative;
+                top:6px;
+                transition: transform 1s;
+                transform: rotate(45deg);
+             
+              }
+              .last{
+                transition: transform 1s;
+                transform: rotate(-45deg);
+               
+              }
+            width:40px;
+            height: 17px;
+             span{
+             width:40px;
+             height: 3px;
+            background: white;
+                display:block;
+                margin-bottom:3px;
+            }
+            
+        }
+    }
+ 
+}
+@media(max-width:374px){
+.wrapper{
+    width:100%;
+    &_links{
+width:100%;
+padding-left: 61px;
+padding-right: 45px;
+li{
+    line-height: 21px;
+    margin-right: 23px;
+}
+    }
+    &_store{
+        width:100%;
+    }
+  &_nav{
+    li{
+        
+        margin-right: 18px;
+    }
+  }
+}
+.footer{
+    .social{
+        width:100%;
+    }
+}
+.promo{
+    &_header{
+        font-weight: 900;
+        font-size: 30px;
+    }
+    &_subheader{
+        font-size: 30px;
+    }
+}
+.subheader{
+    &_logo{
+        img{
+            height: 15px;
+        }
+    }
+        
+}
+}
