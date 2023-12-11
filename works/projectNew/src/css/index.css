@@ -286,3 +286,17 @@ footer .footer_info span{
 footer .footer_info a{
     color:white;
 }
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 4s;
+  }
+  .animate__animated.animate__jackInTheBox{
+    --animate-duration: 2s;
+  }
+  .animate__animated.animate__bounceIn{
+    --animate-duration: 3s;
+  }
+  .animate__animated.animate__bounceInUp{
+    --animate-duration: 2s;
+
+  }
